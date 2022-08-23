@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1661243563 source:e:\unlam\programaciontcp\2022-2c\tp-01\ejercicio-15\funciones.c
+	"Funciones.h"
+
+1661243563 e:\unlam\programaciontcp\2022-2c\tp-01\ejercicio-15\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1661243739 source:e:\unlam\programaciontcp\2022-2c\tp-01\ejercicio-15\main.c
+	"Funciones.h"
+
