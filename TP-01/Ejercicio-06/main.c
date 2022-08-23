@@ -3,24 +3,24 @@
 #include <math.h>
 
 
-#define TOL 0.001
+#define TOL 0.01
 
 
-unsigned long long elevar(int base, int exponente);
 unsigned long long factorial(int n);
-double senox(float x);
+double senox(double x);
 
 
 int main()
 {
-    float n = 5;
+    double n = 6;
 
     printf("%f\n", senox(n));
+
     return 0;
 }
 
 
-double senox(float x)
+double senox(double x)
 {
     int  i = 1, consig = 0;
     double sen = 0, res;
@@ -50,20 +50,13 @@ double senox(float x)
 unsigned long long factorial(int n)
 {
     unsigned long long i, fact = 1;
+
+    if(n == 0)
+        return 1;
+
     for (i = 1; i <= n; i++)
     {
         fact *= i;
     }
     return fact;
-}
-
-
-unsigned long long elevar(int base, int exponente)
-{
-    unsigned long long i, res = 1;
-
-    for(i = 1; i <= exponente; i++)
-        res *= base;
-
-    return res;
 }

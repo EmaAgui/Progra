@@ -4,16 +4,12 @@
 int main()
 {
 //    Fecha f1 = ingresarFecha();
-    Fecha f2;
+    Fecha f1 = {31, 03, 2021};
 
-    f2.dia = 31;
-    f2.mes = 2;
-    f2.anio = 1601;
-
-    if(esFechaValida(&f2))
-        printf("%02d/%02d/%d es formalmente Corecta", f2.dia, f2.mes, f2.anio);
+    if(esFechaValida(&f1))
+        printf("%02d/%02d/%d es formalmente Corecta", f1.dia, f1.mes, f1.anio);
     else
-        printf("%02d/%02d/%d es Incorrecta", f2.dia, f2.mes, f2.anio);
+        printf("%02d/%02d/%d es formalmente Incorrecta", f1.dia, f1.mes, f1.anio);
 
     return 0;
 }

@@ -19,7 +19,7 @@ int sumatoriaParesMenoresQueN(int num)
 {
     int sum = 0, i;
 
-    for(i = 1; i <= num; i++)
+    for(i = 1; i < num; i++)
     {
         if(i % 2 == 0)
             sum += i;

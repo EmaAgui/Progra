@@ -34,12 +34,7 @@ int perteneceAFibonacci(int n)
     }
 
     if (c == n)
-    {
         return 1;
-    }
     else
-    {
         return 0;
-    }
-
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define TOL 0.0000001
+#define TOL 0.0001
 
 
 unsigned long long factorial(int n);
@@ -11,21 +11,21 @@ float exponente(int x, int i);
 
 int main()
 {
-    int x = 3, i = 0;
+    int x = 5, i = 0;
     double res = 0, res2 = 1, error;
 
     do
     {
         res += exponente(x, i);
-        res2 += exponente(x, i+1);
+        res2 += exponente(x, i + 1);
         error = res2 - res;
 
         i++;
     }
     while(error  > TOL);
 
-    printf("Error %e\n\n", error);
-    printf("Tol %e\n\n", TOL);
+    printf("Error %.10f\n\n", error);
+    printf("Tol   %.10f\n\n", TOL);
     printf("El res: %f", res);
 
     return 0;

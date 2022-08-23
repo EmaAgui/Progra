@@ -10,7 +10,8 @@ double raiz(int num);
 
 int main()
 {
-    printf("Raiz es %f", raiz(5));
+    int num = 4;
+    printf("Raiz es %f", raiz(num));
 
     return 0;
 }
@@ -18,20 +19,20 @@ int main()
 
 double raiz(int num)
 {
-    float r=1, b=0,a=0;
+    float r = 1, b = 0, a = 0;
 
     do
     {
-        b=r;
-        r=((b+(num/b))/2);
-        a=r-b;
+        b = r;
+        r = ((b + (num / b)) /2);
+        a = r - b;
 
-        if(a<0)
+        if(a < 0)
         {
-            a*=-1;
+            a *= -1;
         }
     }
-    while(a>TOL);
+    while(a > TOL);
 
     return r;
 }
