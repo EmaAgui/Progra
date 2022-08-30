@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1661848935 source:e:\unlam\programaciontcp\2022-2c\cadenas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"StringH.h"
+	"CtypeH.h"
+
+1661693914 e:\unlam\programaciontcp\2022-2c\cadenas\stringh.h
+	<stdio.h>
+	<stdlib.h>
+
+1661848749 source:e:\unlam\programaciontcp\2022-2c\cadenas\stringh.c
+	"StringH.h"
+	"String.h"
+	<ctype.h>
+
+1661770903 source:e:\unlam\programaciontcp\2022-2c\cadenas\ctypeh.c
+	"CtypeH.h"
+
+1661770769 e:\unlam\programaciontcp\2022-2c\cadenas\ctypeh.h
+
