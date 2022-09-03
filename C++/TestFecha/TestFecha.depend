@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1661615401 source:e:\unlam\programaciontcp\2022-2c\c++\testfecha\main.cpp
+	<iostream>
+	"../Fecha/Fecha.h"
+
+1661868373 e:\unlam\programaciontcp\2022-2c\c++\fecha\fecha.h
+
