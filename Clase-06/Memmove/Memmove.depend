@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663060646 source:e:\unlam\programaciontcp\2022-2c\clase-06\memmove\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
