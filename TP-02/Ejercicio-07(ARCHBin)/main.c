@@ -128,14 +128,14 @@ int compararApeNomDni(const void *dato1, const void *dato2)
 
     int cmp = strcmp(emp.apellido, est.apellido);
 
-    if(!cmp)
+    if(!cmp) /// si los apellidos no son iguales
     {
         cmp = strcmp(emp.nombre, est.nombre);
-        if(!cmp)
-            cmp = emp.dni - est.dni;
+        if(!cmp) /// si los nombres no son iguales
+            cmp = emp.dni - est.dni; /// si los dni no son iguales
     }
 
-    return cmp;
+    return cmp; /// retorno si los apellidos, nombres y dni son iguales
 }
 
 
@@ -143,14 +143,13 @@ void mostrarEstudiante(const void *dato)
 {
     Estudiante est = *(Estudiante*)dato;
     printf("DNI[%d], NOMBRE[%s], APELLIDO[%s], PROMEDIO[%.2f]\n", est.dni, est.nombre, est.apellido, est.promedio);
-
 }
+
 
 void mostrarEmpleado(const void *dato)
 {
     Empleado emp = *(Empleado*)dato;
     printf("DNI[%d], NOMBRE[%s], APELLIDO[%s], SUELDO[%.2f]\n", emp.dni, emp.nombre, emp.apellido, emp.sueldo);
-
 }
 
 

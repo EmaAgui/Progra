@@ -21,10 +21,11 @@ int compararApeNomDNI(const void *dato1, const void *dato2)
 
 void subirSueldos(const void *d1, const void *d2, FILE *pEmp, FILE *pEst, int comparacion(const void *dato1, const void *dato2))
 {
+
     Empleado emp = *(Empleado *)d1;
     Estudiante est = *(Estudiante *)d2;
     int cmp;
-    int aumento = 1.0728;
+    float aumento = 1.0728;
 
     if ((cmp = comparacion(&emp, &est)) == 0)
     {
@@ -32,7 +33,7 @@ void subirSueldos(const void *d1, const void *d2, FILE *pEmp, FILE *pEst, int co
         {
             emp.sueldo *= aumento;
             fseek(pEmp, -(long)sizeof(Empleado), SEEK_CUR);
-            fwrite(&emp, sizeof(emp), 1, pEmp);
+            fwrite(&emp, sizeof(Empleado), 1, pEmp);
             fseek(pEmp, 0L, SEEK_CUR);
         }
         fread(&emp, sizeof(Empleado), 1, pEmp);
@@ -66,26 +67,28 @@ void actualizar(const char *nomArchAct, const char *nomArch, unsigned tamBytesAc
 
     while (!feof(pArchAct) && !feof(pArch))
     {
-        if ((cmp = comparacion(&emp, &est)) == 0)
-        {
-            if (est.promedio >= 7)
-            {
-                emp.sueldo *= aumento;
-                fseek(pArchAct, -(long)tamBytesAct, SEEK_CUR);
-                fwrite(&emp, tamBytesAct, 1, pArchAct);
-                fseek(pArchAct, 0L, SEEK_CUR);
-            }
+    subirSueldos(&emp, &est, pArchAct, pArch, comparacion);
 
-                fread(&emp, tamBytesAct, 1, pArchAct);
-                fread(&est, tamBytes, 1, pArch);
-        }
-        else
-        {
-            if (cmp > 0)
-                fread(&est, tamBytes, 1, pArch);
-            else
-                fread(&emp, tamBytesAct, 1, pArchAct);
-        }
+//        if ((cmp = comparacion(&emp, &est)) == 0)
+//        {
+//            if (est.promedio >= 7)
+//            {
+//                emp.sueldo *= aumento;
+//                fseek(pArchAct, -(long)tamBytesAct, SEEK_CUR);
+//                fwrite(&emp, tamBytesAct, 1, pArchAct);
+//                fseek(pArchAct, 0L, SEEK_CUR);
+//            }
+//
+//                fread(&emp, tamBytesAct, 1, pArchAct);
+//                fread(&est, tamBytes, 1, pArch);
+//        }
+//        else
+//        {
+//            if (cmp > 0)
+//                fread(&est, tamBytes, 1, pArch);
+//            else
+//                fread(&emp, tamBytesAct, 1, pArchAct);
+//        }
     }
 
     fclose(pArchAct);

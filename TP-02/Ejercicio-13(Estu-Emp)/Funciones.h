@@ -10,6 +10,8 @@
 #define TAM_VEC 10
 #define NOM_ARCH_EST "Estudiantes.dat"
 #define NOM_ARCH_EMP "Empleados.dat"
+
+
 typedef struct
 {
     int dni;

@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1663667481 source:e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\main.c
+1663671030 source:e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Funciones.h"
 
-1663667449 e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\funciones.h
+1663671032 e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\funciones.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1663667664 source:e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\funciones.c
+1663671386 source:e:\unlam\programaciontcp\2022-2c\tp-02\ejercicio-13(estu-emp)\funciones.c
 	"Funciones.h"
 
