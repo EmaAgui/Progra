@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1661549021 source:e:\unlam\programaciontcp\2022-2c\clase-04\cadenas\main.c
+	"Cadena.h"
+
+1661556772 source:e:\unlam\programaciontcp\2022-2c\clase-04\cadenas\cadena.c
+	"Cadena.h"
+
+1661547552 e:\unlam\programaciontcp\2022-2c\clase-04\cadenas\cadena.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

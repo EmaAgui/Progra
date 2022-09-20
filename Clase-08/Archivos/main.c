@@ -21,7 +21,7 @@
     Texto
         fgets, fscanf, fprintf,(sscanf), (sprintf)
 
-    1� Abrir el archivo con FILE *fopen(const char *nombre, const char *modo);
+    1° Abrir el archivo con FILE *fopen(const char *nombre, const char *modo);
         Modo de Apertura: t(texto), b(binario).
             r(lectura: el archivo tiene que existir) (rt o rb)
             w(escritura, si el archivo existe lo reemplaza por uno nuevo)(wt o wb)
