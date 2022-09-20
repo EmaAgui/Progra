@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1663102879 source:c:\users\laboratorios\desktop\ema\clase-07\memdinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1663348768 source:e:\unlam\programaciontcp\2022-2c\clase-07\clase-07\memdinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
