@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1663547330 source:e:\unlam\programaciontcp\2022-2c\c++\testcadena\main.cpp
+	<iostream>
+	"../Cadena/Cadena.h"
+
+1663543910 e:\unlam\programaciontcp\2022-2c\c++\cadena\cadena.h
+	<iostream>
+

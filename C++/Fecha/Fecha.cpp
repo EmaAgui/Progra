@@ -1,4 +1,5 @@
 #include "Fecha.h"
+#include "FechaInvalidaException.h"
 
 
 const int Fecha::cdm[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -16,76 +17,90 @@ Fecha::Fecha()
 
 Fecha::Fecha(int dia, int mes, int anio)
 {
-    this->diaRel = dmaADiaRel(dia, mes, anio);///TODO
+    setDma(dia, mes, anio);///TODO
 }
 
 
-Fecha Fecha::sumarDias(int dias) const
+Fecha Fecha::operator +(int dias) const
 {
-    Fecha fechaSuma;
-    fechaSuma.diaRel = this->diaRel + dias;
+    Fecha fechaSuma(*this); ///Copia del objeto llamador, se le pasa la dir de memoria del objeto llamador
+    fechaSuma.diaRel += dias;
 
     return fechaSuma;
 }
 
 
-Fecha Fecha::restarDias(int dias) const
+Fecha Fecha::operator-(int dias) const
 {
-    Fecha fechaResta;
-    fechaResta.diaRel = diaRel - dias;
+    Fecha fechaResta(*this);
+    fechaResta.diaRel -= dias;
+
+    if(fechaResta.diaRel < 1)
+        throw FechaInvalidaException("Fecha invalida: quiere restar mas dias de los permitidos."); ///objeto temporal
 
     return fechaResta;
 }
 
 
-int Fecha::diferenciaDias( Fecha fecha) const
+int Fecha::operator -(const Fecha &fecha) const
 {
-    return diaRel - fecha.diaRel;
+    return this->diaRel - fecha.diaRel;
 }
 
 
-// Dia de la semana, el primer dia es lunes, fecha base 1/1/1601
+Fecha& Fecha::operator ++()///Preincremento
+{
+    ++this->diaRel;
+    return *this;
+}
+
+
+Fecha Fecha::operator ++(int) //Postincremento
+{
+    Fecha fechaAnterior(*this);
+    ++this->diaRel;
+
+    return fechaAnterior;
+}
+
+
 int Fecha::diaDeLaSemana() const
 {
     return (diaRel - 1) % 7;
 }
 
 
-int Fecha::dmaADiaRel(int dia, int mes, int anio)
+void Fecha::setDma(int dia, int mes, int anio)
 {
     if(!esFechaValida(dia, mes, anio))
        throw FECHA_INVALIDA;
 
     int cantAnios = anio - ANIO_BASE;
     int diasAnioCompleto = cantAnios * 365 + cantAnios / 4 - cantAnios / 100 + cantAnios / 400;
-    int diaRel = diasAnioCompleto + diaDelAnio(dia, mes, anio);
-
-
-    return diaRel;
+    this->diaRel = diasAnioCompleto + diaDelAnio(dia, mes, anio);
 }
 
 
-void Fecha::diaRelADma(int diaRel, int *dia, int *mes, int *anio)
+void Fecha::getDma(int &dia, int &mes, int &anio)const
 {
-    int cantAniosComplCal = diaRel / 365;
+    int cantAniosComplCal = this->diaRel / 365;
     int diasAniosComplCal = cantAniosComplCal * 365 + cantAniosComplCal / 4 - cantAniosComplCal / 100 + cantAniosComplCal / 400;
 
-    while(diasAniosComplCal >= diaRel) ///
+    while(diasAniosComplCal >= this->diaRel) ///
     {
         cantAniosComplCal--;
         diasAniosComplCal = cantAniosComplCal * 365 + cantAniosComplCal / 4 - cantAniosComplCal / 100 + cantAniosComplCal / 400;
     }
 
+    anio = cantAniosComplCal + ANIO_BASE;
 
-    *anio = cantAniosComplCal + ANIO_BASE;
+    int diaDelAnio = this->diaRel - diasAniosComplCal;
 
-    int diaDelAnio = diaRel - diasAniosComplCal;
-
-    diaDelAnioADiaMes(diaDelAnio, *anio, dia, mes);
+    diaDelAnioADiaMes(diaDelAnio, anio, dia, mes);
 }
 
 
-void Fecha::diaDelAnioADiaMes(int diaDelAnio, int anio, int *dia, int *mes)
+void Fecha::diaDelAnioADiaMes(int diaDelAnio, int anio, int &dia, int &mes)
 {
     const int *acumDiasMes = esBisiesto(anio)? acumDiasMesBisiesto : Fecha::acumDiasMes; ///Uso un vector o el otro
 
@@ -94,14 +109,19 @@ void Fecha::diaDelAnioADiaMes(int diaDelAnio, int anio, int *dia, int *mes)
         m++;
 
     m--;
-    *mes = m;
+    mes = m;
 
-    *dia = diaDelAnio - acumDiasMes[m];
+    dia = diaDelAnio - acumDiasMes[m];
 
 }
 
 
-void Fecha::getDma(int *dia, int *mes, int *anio) const
+ostream& operator <<(ostream &os, const Fecha &fecha)
 {
-    diaRelADma(diaRel, dia, mes, anio);
+    int dia, mes, anio;
+    fecha.getDma(dia, mes, anio);
+    os << dia << '/' << mes << '/' << anio;
+    return os;
 }
+
+
