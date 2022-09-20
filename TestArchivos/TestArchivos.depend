@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1663676381 source:e:\unlam\programaciontcp\2022-2c\testarchivos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Archivos/Archivos.h"
+
+1663675916 e:\unlam\programaciontcp\2022-2c\archivos\archivos.h
+	<stdio.h>
+	<stdlib.h>
+
