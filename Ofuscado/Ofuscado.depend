@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1666104658 source:c:\users\lucaa\desktop\ejercicios programacion\ofuscado\main.c
+	"header.h"
+
+1666103852 c:\users\lucaa\desktop\ejercicios programacion\ofuscado\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666105889 source:c:\users\lucaa\desktop\ejercicios programacion\ofuscado\funciones.c
+	"header.h"
+
