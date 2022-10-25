@@ -82,6 +82,8 @@ int sacarUltimo(Lista *pl, void *dato, unsigned tamBytes)
     free((*pl)->info);
     free(*pl);
 
+    *pl = NULL;
+
     return 1;
 }
 

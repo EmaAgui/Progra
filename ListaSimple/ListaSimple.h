@@ -33,4 +33,5 @@ void mostrarLista(const Lista *pl, void (mostrar)(const void *d1));
 int ponerEnOrden(Lista *pl, const void *dato, unsigned tamBytes, int cmp(const void *d1, const void *d2));
 void ordenarLista(Lista *pl, int cmp(const void* d1, const void *d2));
 
+
 #endif // LISTASIMPLE_H_INCLUDED
