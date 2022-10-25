@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1666699803 source:e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\ofuscarrenata\funciones.c
+	"Funciones.h"
+
+1666699821 e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\ofuscarrenata\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1666698318 source:e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\ofuscarrenata\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+
