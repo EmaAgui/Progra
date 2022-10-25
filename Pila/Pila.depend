@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666541136 source:e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\pila\piladin.c
+	"PilaDin.h"
+
+1666452775 e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\pila\piladin.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

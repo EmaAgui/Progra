@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1584205422 source:e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\coladin\main.c
+
+1666550941 source:e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\coladin\coladin.c
+	"ColaDin.h"
+
+1666532088 e:\unlam\programaciontcp\2022-2c\aaaaaaaa-repaso-primer-parcial\coladin\coladin.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
