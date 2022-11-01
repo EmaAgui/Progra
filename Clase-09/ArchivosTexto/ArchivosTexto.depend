@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1663704680 source:c:\users\laboratorios\desktop\ema\clase-09\archivostexto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1663722710 source:e:\unlam\programaciontcp\2022-2c\ema_1\ema\clase-09\archivostexto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
