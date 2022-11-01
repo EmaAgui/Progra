@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1667064503 source:d:\universidad\programacion\ej1\funciones.c
+	"Prototipos.h"
+	"Lista.h"
+
+1667064503 d:\universidad\programacion\ej1\prototipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Lista.h"
+
+1667059972 d:\universidad\programacion\ej1\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1667058499 source:d:\universidad\programacion\ej1\lista.c
+	"Lista.h"
+
+1667064396 source:d:\universidad\programacion\ej1\main.c
+	"Lista.h"
+	"Prototipos.h"
+

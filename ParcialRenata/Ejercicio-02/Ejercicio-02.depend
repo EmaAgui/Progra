@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1667146619 source:e:\unlam\programaciontcp\2022-2c\parcialrenata\ejercicio-02\lugar.cpp
+	"Lugar.h"
+
+1667145849 e:\unlam\programaciontcp\2022-2c\parcialrenata\ejercicio-02\lugar.h
+	<iostream>
+	<string.h>
+	<math.h>
+
+1667145938 source:e:\unlam\programaciontcp\2022-2c\parcialrenata\ejercicio-02\main.cpp
+	<iostream>
+	"Lugar.h"
+
