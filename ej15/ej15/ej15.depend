@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1661022630 source:d:\universidad\programacion\2022\ej15\ej15.c
+	"ej15.h"
+
+1661022423 d:\universidad\programacion\2022\ej15\ej15.h
+	<stdio.h>
+	<stdlib.h>
+
+1661022487 source:d:\universidad\programacion\2022\ej15\main.c
+	"ej15.h"
+
+1661022630 source:e:\unlam\programaciontcp\2022-2c\ej15\ej15\ej15.c
+	"ej15.h"
+
+1661022423 e:\unlam\programaciontcp\2022-2c\ej15\ej15\ej15.h
+	<stdio.h>
+	<stdlib.h>
+
+1661023028 source:e:\unlam\programaciontcp\2022-2c\ej15\ej15\main.c
+	"ej15.h"
+

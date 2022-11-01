@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1665253562 source:e:\unlam\programaciontcp\2022-2c\cuadrado\main.cpp
+	"Cuadrado.h"
+	<iostream>
+
+1665260374 source:e:\unlam\programaciontcp\2022-2c\cuadrado\cuadrado.cpp
+	"Cuadrado.h"
+
+1665252910 e:\unlam\programaciontcp\2022-2c\cuadrado\cuadrado.h
+	<iostream>
+

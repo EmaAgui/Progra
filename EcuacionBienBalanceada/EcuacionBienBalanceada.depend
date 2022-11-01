@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1665963909 source:e:\unlam\programaciontcp\2022-2c\ecuacionbienbalanceada\main.c
+	"Pila.h"
+
+1665254782 e:\unlam\programaciontcp\2022-2c\ecuacionbienbalanceada\pila.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1665254844 source:e:\unlam\programaciontcp\2022-2c\ecuacionbienbalanceada\pila.c
+	"Pila.h"
+
