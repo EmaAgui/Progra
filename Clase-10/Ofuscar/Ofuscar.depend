@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1665155970 source:e:\unlam\programaciontcp\2022-2c\clase-10\ofuscar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

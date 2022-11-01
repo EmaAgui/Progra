@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1667225686 source:e:\unlam\programaciontcp\2022-2c\clase-17\colacircular\cola.c
+	"Cola.h"
+
+1667219727 e:\unlam\programaciontcp\2022-2c\clase-17\colacircular\cola.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1667219581 source:e:\unlam\programaciontcp\2022-2c\clase-17\colacircular\main.c
+	"Cola.h"
+
