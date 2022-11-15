@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1668520669 source:e:\unlam\programaciontcp\2022-2c\clase-21(arbol)\arbol\main.c
+	"Arbol.h"
+
+1668477915 e:\unlam\programaciontcp\2022-2c\clase-21(arbol)\arbol\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1668477915 source:e:\unlam\programaciontcp\2022-2c\clase-21(arbol)\arbol\arbol.c
+	"Arbol.h"
+
