@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1682034505 source:e:\unlam\programaciontcp\2023-1c\clases\01-fecha\01-cadenacar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

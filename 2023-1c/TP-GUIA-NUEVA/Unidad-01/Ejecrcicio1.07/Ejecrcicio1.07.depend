@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1681754400 source:e:\unlam\programaciontcp\2023-1c\tp-guia-nueva\unidad-01\ejecrcicio1.07\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
